@@ -189,8 +189,8 @@ class Cart extends Model {
 
 	}
 
-
-	public function setFreight($nrzipcode)
+    //Comentado pq não funciona mais http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrecoPrazo?
+	/*public function setFreight($nrzipcode)
 	{
 
 		$nrzipcode = str_replace('-', '', $nrzipcode);
@@ -219,9 +219,9 @@ class Cart extends Model {
 				'sCdAvisoRecebimento'=>'S'
 			]);
 
-			$xml = simplexml_load_file("http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrecoPrazo?" . $qs);
+			//$xml = simplexml_load_file("http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrecoPrazo?" . $qs);
 
-            $result = $xml->Servicos->cServico;
+            //$result = $xml->Servicos->cServico;
 
 			if ($result->MsgErro != '') {
 
@@ -248,7 +248,7 @@ class Cart extends Model {
 		}
 
 
-	}
+	}*/
 	
 
 

@@ -3,7 +3,6 @@
 use \Hcode\Model\User;
 use \Hcode\Model\Cart;
 
-/*function formatPrice(float $vlprice)*/
 function formatPrice($vlprice)
 {
 
@@ -58,7 +57,5 @@ function getCartVlSubTotal()
 
 }
 
- ?>
-
-
+ 
 ?>

@@ -13,7 +13,7 @@ class User extends Model {
 	const SECRET_IV = "HcodePhp7_Secret_IV";
 	const ERROR = "UserError";
 	const ERROR_REGISTER = "UserErrorRegister";
-	const SUCCESS = "UserSucesss";
+	const SUCCESS = "UserSuccess";
 
 	public static function getFromSession()
 	{
@@ -351,6 +351,8 @@ class User extends Model {
 
 	}
 
+	
+
 	public static function setSuccess($msg)
 	{
 
@@ -470,6 +472,7 @@ class User extends Model {
 
 	}
 
+	
 	public static function getPageSearch($search, $page = 1, $itemsPerPage = 10)
 	{
 

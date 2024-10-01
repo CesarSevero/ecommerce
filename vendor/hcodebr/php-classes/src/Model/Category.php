@@ -169,8 +169,6 @@ class Category extends Model {
 
 	}
 
-	/*
-			
 	public static function getPage($page = 1, $itemsPerPage = 10)
 	{
 
@@ -188,11 +186,10 @@ class Category extends Model {
 		$resultTotal = $sql->select("SELECT FOUND_ROWS() AS nrtotal;");
 
 		return [
-			'data'=>$results,
-			'total'=>(int)$resultTotal[0]["nrtotal"],
-			'pages'=>ceil($resultTotal[0]["nrtotal"] / $itemsPerPage)
+			'data' => $results,
+			'total' => (int)$resultTotal[0]["nrtotal"],
+			'pages' => ceil($resultTotal[0]["nrtotal"] / $itemsPerPage)
 		];
-
 	}
 
 	public static function getPageSearch($search, $page = 1, $itemsPerPage = 10)
@@ -209,19 +206,22 @@ class Category extends Model {
 			ORDER BY descategory
 			LIMIT $start, $itemsPerPage;
 		", [
-			':search'=>'%'.$search.'%'
+			':search' =>'%'. $search.'%'
 		]);
 
 		$resultTotal = $sql->select("SELECT FOUND_ROWS() AS nrtotal;");
 
 		return [
-			'data'=>$results,
-			'total'=>(int)$resultTotal[0]["nrtotal"],
-			'pages'=>ceil($resultTotal[0]["nrtotal"] / $itemsPerPage)
+			'data' => $results,
+			'total' => (int)$resultTotal[0]["nrtotal"],
+			'pages' => ceil($resultTotal[0]["nrtotal"] / $itemsPerPage)
 		];
-
 	}
-*/
+
+	
+			
+	
+
 }
 
  ?>
